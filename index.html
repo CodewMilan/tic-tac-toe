@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+    </style>
+</head>
+<body class="box-border m-0 p-0 font-[Poppins] min-h-screen grid place-items-end bg-[url(./gradient-bg.jpg])">
+    <div class="wrapper w-full place-items-center">
+        <p class="game-info absolute top-[3rem] left-[50%] translate-x-[-50%] bg-[#ffffff26] rounded-[1rem] p-[0.5rem 3rem]">
+            current player - X 
+        </p>
+
+        <div class="tic">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+        <button class="btn mb-10">
+            New game
+        </button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
