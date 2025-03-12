@@ -22,9 +22,11 @@ function initgame(){
     currentPlayer = "X"
     gameGrid = ["","","","","","","","",""]
     newGameBtn.classList.add("invisible");
+    
     boxes.forEach((box,index) => {
         box.innerHTML= "";
-        boxes[index].style.pointerEvents = 'all'
+        boxes[index].style.pointerEvents = 'all';
+        box.classList.remove("bg-black");
     })
     gameInfo.innerText = `Current Player - ${currentPlayer}`;
          
@@ -102,6 +104,11 @@ function checkWinner(){
         if(box !== "")
             fillCount++;
     });
+
+    if(fillCount == 9){
+        gameInfo.innerHTML = "Game Tied!"
+        newGameBtn.classList.remove("invisible")
+    }
 
     
     
