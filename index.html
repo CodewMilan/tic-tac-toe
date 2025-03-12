@@ -10,25 +10,25 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
     </style>
 </head>
-<body class="box-border m-0 p-0 font-[Poppins] min-h-screen grid place-items-end bg-[url(./gradient-bg.jpg])">
+<body class="box-border m-0 p-0 font-[Poppins] min-h-screen grid bg-[url('/images/gradient-bg.jpg')] h-screen bg-cover bg-center">
     <div class="wrapper w-full place-items-center">
-        <p class="game-info absolute top-[3rem] left-[50%] translate-x-[-50%] bg-[#ffffff26] rounded-[1rem] p-[0.5rem 3rem]">
-            current player - X 
+        <p class="game-info absolute top-[3rem] left-[50%] translate-x-[-50%] bg-[#ffffff26] rounded-[1rem] px-[3rem] py-[0.5rem] text-white  border-[1px] border-[rgba(255,255,255,0.25)]">
+            
         </p>
 
-        <div class="tic">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+        <div class="tic w-[90%] max-w-[20rem] rounded-[1rem] border-[rgba(255,255,255,0.25)] bg-[#ffffff26] p-[2rem] absolute top-[30%] left-[50%] translate-x-[-50%] grid grid-cols-3 aspect-square">
+            <div class="box relative w-full aspect-square cursor-pointer text-[3rem] text-white flex justify-center items-center border-r-2 border-b-2 border-solid"></div>
+            <div class="box relative w-full aspect-square cursor-pointer text-[3rem] text-white flex justify-center items-center border-r-2 border-b-2 border-solid"></div>
+            <div class="box relative w-full aspect-square cursor-pointer text-[3rem] text-white flex justify-center items-center border-b-2 border-solid"></div>
+            <div class="box relative w-full aspect-square cursor-pointer text-[3rem] text-white flex justify-center items-center border-r-2 border-b-2 border-solid"></div>
+            <div class="box relative w-full aspect-square cursor-pointer text-[3rem] text-white flex justify-center items-center border-r-2 border-b-2 border-solid"></div>
+            <div class="box relative w-full aspect-square cursor-pointer text-[3rem] text-white flex justify-center items-center border-b-2 border-solid"></div>
+            <div class="box relative w-full aspect-square cursor-pointer text-[3rem] text-white flex justify-center items-center border-r-2 border-solid"></div>
+            <div class="box relative w-full aspect-square cursor-pointer text-[3rem] text-white flex justify-center items-center border-r-2 border-solid"></div>
+            <div class="box relative w-full aspect-square cursor-pointer text-[3rem] text-white flex justify-center items-center "></div>
         </div>
 
-        <button class="btn mb-10">
+        <button class="btn text-white bg-[#ffffff26] rounded-[1rem] px-[3rem] py-[0.5rem] border-[1px] border-[rgba(255,255,255,0.25)] absolute left-[50%] translate-x-[-50%] bottom-[3rem] invisible">
             New game
         </button>
     </div>
